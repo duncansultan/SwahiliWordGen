@@ -1,0 +1,56 @@
+[
+    {
+        "Swahili": "",
+        "English": "Empty",
+		"Grammer": null,
+		"Form": null
+    }, 
+    {
+        "Swahili": "na",
+        "English": "Am",
+		"Grammer": "Present Continous",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "ta",
+        "English": "Will",
+		"Grammer": "Future",
+		"Form": "Positive"
+    }, 	
+    {
+        "Swahili": "li",
+        "English": "Was",
+		"Grammer": "Past Simple",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "ku",
+        "English": "Did",
+		"Grammer": "Past Simple - Negative",
+		"Form": "Negative"
+    }, 	
+    {
+        "Swahili": "si",
+        "English": "Won't",
+		"Grammer": "Subjunctive - Negative",
+		"Form": "Negative"
+    }, 		
+    {
+        "Swahili": "me",
+        "English": "Have done",
+		"Grammer": "...",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "ge",
+        "English": "Usually Do",
+		"Grammer": "Habitual",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "ki",
+        "English": "If",
+		"Grammer": "",
+		"Form": "Positive"
+    }  	
+]

@@ -1,0 +1,14 @@
+<div class="form-group">
+	<div class="row">
+		<h6>Subject <span class="glyphicon glyphicon-user"/>
+		</h6>
+	</div>
+	<div class="row">
+		<select ng-model="SubjectCtrl.selected" 
+		ng-options="subject.Swahili + ' (' + subject.English + ')' for subject in SubjectCtrl.subjects" 
+		ng-change="SubjectCtrl.changed()"
+		kendo-drop-down-list 
+		k-ng-delay="SubjectCtrl.selected">
+		</select>	
+	</div>
+</div>

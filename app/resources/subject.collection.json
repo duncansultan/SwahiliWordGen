@@ -1,0 +1,98 @@
+[
+    {
+        "Swahili": "",
+        "English": "Empty",
+		"NounClass": null,
+		"Form": null
+    }, 
+    {
+        "Swahili": "ku",
+        "English": "To Do",
+		"NounClass": "Infinitive",
+		"Form": "Positive"
+    },     
+	{
+        "Swahili": "ni",
+        "English": "I",
+		"NounClass": "m/wa",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "u",
+        "English": "You",
+		"NounClass": "m/wa",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "mu",
+        "English": "Y'all",
+		"NounClass": "m/wa",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "a",
+        "English": "He/She",
+		"NounClass": "m/wa",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "wa",
+        "English": "They",
+		"NounClass": "m/wa",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "i",
+        "English": "It",
+		"NounClass": "m/mi",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "si",
+        "English": "I - Negative",
+		"NounClass": "m/wa",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "hu",
+        "English": "You - Negative",
+		"NounClass": "m/wa",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "ha",
+        "English": "He/She - Negative",
+		"NounClass": "m/wa",
+		"Form": "Negative"
+    },	
+    {
+        "Swahili": "hatu",
+        "English": "We (don't)",
+		"NounClass": "m/wa",
+		"Form": "Negative"
+    },	
+    {
+        "Swahili": "ham",
+        "English": "Y'all - Negative",
+		"NounClass": "m/wa",
+		"Form": "Negative"
+    },		
+    {
+        "Swahili": "hawa",
+        "English": "They - Negative",
+		"NounClass": "Negative: [m/wa] They",
+		"Form": "Negative"
+    },	
+    {
+        "Swahili": "hau",
+        "English": "It - Negative",
+		"NounClass": "m/mi",
+		"Form": "Negative"
+    },	
+	{
+        "Swahili": "hai",
+        "English": "They - Negative",
+		"NounClass": "m/mi",
+		"Form": "Negative"
+    }
+]

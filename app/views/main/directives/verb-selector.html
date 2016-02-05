@@ -1,0 +1,14 @@
+<div class="form-group">
+	<div class="row">
+		<h6>Verb <span class="glyphicon glyphicon-flash"/>
+		</h6>
+	</div>		
+	<div class="row">
+		<select ng-model="VerbCtrl.selected" 
+		ng-options="verb.Swahili + ' (' + verb.English + ')' for verb in VerbCtrl.verbs | orderBy:'Swahili'" 
+		ng-change="VerbCtrl.changed()"
+		kendo-drop-down-list 
+		k-ng-delay="VerbCtrl.selected">
+		</select>
+	</div>
+</div>

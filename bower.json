@@ -1,0 +1,32 @@
+{
+  "name": "swahili",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-aria": "^1.4.9",
+    "angular-cookies": "^1.4.9",
+    "angular-messages": "^1.4.9",
+    "angular-resource": "^1.4.9",
+    "angular-route": "^1.4.9",
+    "angular-sanitize": "^1.4.9",
+    "angular-touch": "^1.4.9",
+    "kendo-ui": "^2016.1.125",
+    "bootswatch": "^3.3.6+1",
+    "font-awesome": "fontawesome#^4.5.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "swahiliApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

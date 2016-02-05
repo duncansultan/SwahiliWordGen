@@ -1,0 +1,37 @@
+[
+    {
+        "Swahili": "",
+        "English": "Empty",
+		"NounClass": null
+    }, 
+    {
+        "Swahili": "ni",
+        "English": "Myself",
+		"NounClass": "m/wa"
+    }, 
+    {
+        "Swahili": "ku",
+        "English": "You",
+		"NounClass": "m/wa"
+    }, 
+    {
+        "Swahili": "m",
+        "English": "He/She",
+		"NounClass": "m/wa"
+    }, 	
+    {
+        "Swahili": "mu",
+        "English": "Y'all",
+		"NounClass": "m/wa"
+    }, 
+    {
+        "Swahili": "tu",
+        "English": "We",
+		"NounClass": "m/wa"
+    }, 		
+    {
+        "Swahili": "wa",
+        "English": "They/Y'all",
+		"NounClass": "m/wa"
+    }
+]
