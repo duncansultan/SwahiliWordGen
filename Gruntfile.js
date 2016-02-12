@@ -426,21 +426,6 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
-        }, {
-        expand: true,
-        cwd: 'bower_components/bootstrap/fonts',
-        dest: '<%= yeoman.dist %>/fonts',
-        src: '*.*'
-		}, {
-        expand: true,
-        cwd: 'bower_components/kendo-ui/styles/MaterialBlack',
-        dest: '<%= yeoman.dist %>/styles/MaterialBlack',
-        src: '*.*'
-		}, {
-          expand: true,
-          cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {
@@ -448,14 +433,35 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
-      }
+      },
+      bowerbootstrapfonts: {
+        expand: true,
+        cwd: 'bower_components/bootstrap/dist/fonts/',
+        dest: '<%= yeoman.dist %>/fonts',
+        src: '*.*'
+      },
+      bowerfontawesome: {
+        expand: true,
+        cwd: 'bower_components/font-awesome/fonts',
+        dest: '<%= yeoman.dist %>/fonts',
+        src: '*.*'
+      },	  
+	  bowerkendoui: {
+        expand: true,
+        cwd: 'bower_components/kendo-ui/styles/MaterialBlack',
+        dest: '<%= yeoman.dist %>/styles/MaterialBlack',
+        src: '*.*'	  
+	  }
     },
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
 	    'compass:server',
-        'copy:styles'
+        'copy:styles',
+		'copy:bowerbootstrapfonts',
+		'copy:bowerfontawesome',
+		'copy:bowerkendoui'
       ],
       test: [
 	    'compass',
@@ -464,6 +470,9 @@ module.exports = function (grunt) {
       dist: [
 	    'compass:dist',
         'copy:styles',
+		'copy:bowerbootstrapfonts',
+		'copy:bowerfontawesome',
+		'copy:bowerkendoui', 		
         'imagemin',
         'svgmin'
       ]

@@ -25,7 +25,7 @@ angular.module('swahiliApp')
 			endingData.all()
 			.success(function (data) {
 				vm.endings = data;
-				vm.selected = vm.endings[1];
+				vm.selected = vm.endings[0];
 				vm.changed();
 			});
 

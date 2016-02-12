@@ -12,8 +12,6 @@
 angular
   .module('swahiliApp', [
     'ngAnimate',
-    'ngAria',
-    'ngCookies',
     'ngMessages',
     'ngResource',
     'ngRoute',
