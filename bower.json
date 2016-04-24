@@ -9,7 +9,6 @@
     "angular-route": "^1.5.0",
     "angular-sanitize": "^1.5.0",
     "angular-touch": "^1.5.0",
-    "kendo-ui": "^2016.1.125",
     "font-awesome": "fontawesome#^4.5.0",
     "bootswatch": "^3.3.6+1"
   },
@@ -35,14 +34,6 @@
 			"fonts/fontawesome-webfont.ttf",
 			"fonts/fontawesome-webfont.woff",
 			"fonts/fontawesome-webfont.woff2"
-		]
-	},
-	"kendo-ui" : {
-	  "main": [
-			"js/kendo.ui.core.min.js",
-			"styles/kendo.common.core.min.css",
-			"styles/kendo.materialblack.min.css",
-			"styles/MaterialBlack/*.*"
 		]
 	},
 	"bootswatch" : {

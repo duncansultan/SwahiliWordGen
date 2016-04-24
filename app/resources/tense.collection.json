@@ -1,56 +1,62 @@
 [
     {
-        "Swahili": "",
-        "English": "Empty",
-		"Grammer": null,
-		"Form": null
-    }, 
-    {
-        "Swahili": "na",
-        "English": "Am",
-		"Grammer": "Present Continous",
+        "Swahili": "-na-",
+        "English": "do",
+		"Tense": "Present",
 		"Form": "Positive"
     }, 
     {
-        "Swahili": "ta",
-        "English": "Will",
-		"Grammer": "Future",
-		"Form": "Positive"
-    }, 	
-    {
-        "Swahili": "li",
-        "English": "Was",
-		"Grammer": "Past Simple",
-		"Form": "Positive"
-    }, 
-    {
-        "Swahili": "ku",
-        "English": "Did",
-		"Grammer": "Past Simple - Negative",
+        "Swahili": "-(-)-",
+        "English": "don't",
+		"Tense": "Present",
 		"Form": "Negative"
     }, 	
     {
-        "Swahili": "si",
-        "English": "Won't",
-		"Grammer": "Subjunctive - Negative",
-		"Form": "Negative"
-    }, 		
+        "Swahili": "-li-",
+        "English": "did",
+		"Tense": "Simple Past",
+		"Form": "Positive"
+    }, 	
     {
-        "Swahili": "me",
-        "English": "Have done",
-		"Grammer": "...",
+        "Swahili": "-ku-",
+        "English": "didn't",
+		"Tense": "Simple Past",
+		"Form": "Negative"
+    }, 	
+    {
+        "Swahili": "-me-",
+        "English": "had",
+		"Tense": "Past Perfect",
+		"Form": "Positive"
+    },	
+    {
+        "Swahili": "-ja-",
+        "English": "hadn't",
+		"Tense": "Past Perfect",
+		"Form": "Negative"
+    },	
+    {
+        "Swahili": "-ta-",
+        "English": "will",
+		"Tense": "Future",
 		"Form": "Positive"
     },
     {
-        "Swahili": "ge",
-        "English": "Usually Do",
-		"Grammer": "Habitual",
+        "Swahili": "-ta-",
+        "English": "won't",
+		"Tense": "Future",
 		"Form": "Negative"
     },
     {
         "Swahili": "ki",
-        "English": "If",
-		"Grammer": "",
+        "English": "were",
+		"Tense": "Conditional/Continuing",
 		"Form": "Positive"
-    }  	
+    },  
+    {
+        "Swahili": "nge",
+        "English": "would",
+		"Tense": "Conditional (would)",
+		"Form": "Positive"
+    }
 ]

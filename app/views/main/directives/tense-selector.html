@@ -1,14 +1,9 @@
 <div class="form-group">
-	<div class="row">
-		<h6>Tense <span class="glyphicon glyphicon-time"/>
-		</h6>
-	</div>		
-	<div class="row">
-		<select ng-model="TenseCtrl.selected" 
-		ng-options="tense.Swahili + ' (' + tense.English + ')' for tense in TenseCtrl.tenses" 
-		ng-change="TenseCtrl.changed()"
-		kendo-drop-down-list 
-		k-ng-delay="TenseCtrl.selected">
-		</select>
-	</div>
+	<h6 class="control-label">
+	Tense <span class="glyphicon glyphicon-time"/>
+	</h6>
+	<select class="form-control" ng-model="TenseCtrl.selected" 
+	ng-options="tense.Swahili + ' (' + tense.English + ')' group by tense.Tense for tense in TenseCtrl.tenses" 
+	ng-change="TenseCtrl.changed()">
+	</select>
 </div>

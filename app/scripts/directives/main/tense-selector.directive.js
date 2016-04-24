@@ -13,22 +13,23 @@ angular.module('swahiliApp')
 	return {
 		restrict : 'E',
 		templateUrl : 'views/main/directives/tense-selector.html',
-		controller : function (tenseData, word) {
-			var vm = this;
-			
+		controller : function (tenseData, word, validate) {
+			var vm = this;			
 			// Share Selected Subject with Service
 			vm.changed = function () {
-				word.setTense(vm.selected);
+				word.SetTense(vm.selected);
 			};			
 			
 			tenseData.all()
 			.success(function (data) {
 				vm.tenses = data;
-				vm.selected = vm.tenses[1];
+				for (var i = 0; i < vm.tenses.length; i++) {
+					if (vm.tenses[i].Swahili === '-na-') {
+						vm.selected = vm.tenses[i];
+					}
+				}
 				vm.changed();
 			});
-
-
 		},
 		controllerAs : 'TenseCtrl'
 	};

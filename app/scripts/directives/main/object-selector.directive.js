@@ -14,22 +14,23 @@ angular.module('swahiliApp')
 	return {
 		restrict : 'E',
 		templateUrl : 'views/main/directives/object-selector.html',
-		controller : function (objectData, word) {
-			var vm = this;
-			
+		controller : function (objectData, word, validate) {
+			var vm = this;			
 			// Share Selected Object with Service
 			vm.changed = function () {
-				word.setObject(vm.selected);
+				word.SetObject(vm.selected);
 			};			
 			
 			objectData.all()
 			.success(function (data) {
 				vm.objects = data;
-				vm.selected = vm.objects[0];
+				for (var i = 0; i < vm.objects.length; i++) {
+					if (vm.objects[i].Swahili === '-ku-') {
+						vm.selected = vm.objects[i];
+					}
+				}
 				vm.changed();
 			});
-
-
 		},
 		controllerAs : 'ObjectCtrl'
 	};

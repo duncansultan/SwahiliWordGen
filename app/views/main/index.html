@@ -1,54 +1,41 @@
-<div class="panel panel-primary">
-   <div class="panel-heading text-left">
-      <div class="panel-title">
-		<h6><span class="glyphicon glyphicon-cog"></span>	
-			<strong>Swahili Word Generator</strong></h6>
-	  </div>
-   </div>
+<div class="panel panel-default">
    <div class="panel-body text-center">
-      </br>
-	  <div class="row form-group">
-		<span class="glyphicon glyphicon-book"></span>	
-		<strong>S</strong>ubject prefix <strong>T</strong>ense sign <strong>R</strong>elative <strong>O</strong>bject infix <strong>V</strong>erb stem <strong>E</strong>nd of verb
-	  </div>
-	  </br>
-      <div class="row form-group">
-         <div class ="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+         <div class ="col-lg-2 col-md-3 col-sm-4 col-xs-12">
             <subject-selector>
             <subject-selector/>
          </div>
-         <div class ="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+         <div class ="col-lg-2 col-md-3 col-sm-4 col-xs-12">
             <tense-selector>
             <tense-selector/>
          </div>
-         <div class ="col-lg-3 col-md-3 col-sm-4 col-xs-12" ng-hide='true'>
+         <div class ="col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-hide='true'>
             <object-selector>
             <object-selector/>
          </div>
-         <div class ="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+         <div class ="col-lg-2 col-md-3 col-sm-4 col-xs-12">
             <verb-selector>
             <verb-selector/>
          </div>
-         <div class ="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+         <div class ="col-lg-2 col-md-3 col-sm-4 col-xs-12">
             <ending-selector>
             <ending-selector/>
          </div>
-      </div>
-      <div class="col-md-12">
-         <div  class="form-group text-center">
-            <h3 ng-class="{'text-success' : MainCtrl.word.valid == true, 'text-danger' : MainCtrl.word.valid == false}">
-				{{MainCtrl.fullWordSwahili}}
-			</h3>
-            <h4 class="text-default">
-				{{MainCtrl.fullWordEnglish}}
-			</h4>			
-            <h3 ng-class="{'text-success' : MainCtrl.word.valid == true, 'text-danger' : MainCtrl.word.valid == false}">
-				{{MainCtrl.message}} <span ng-class="{'glyphicon-thumbs-up' : MainCtrl.word.valid == true, 'glyphicon-thumbs-down' : MainCtrl.word.valid == false}" class="glyphicon"/>
-            </h3>
-            <h4 ng-hide="MainCtrl.word.valid" class="text-danger">
-				{{MainCtrl.validMessage}}
-			</h4>
-         </div>
-      </div>
    </div>
+</div>   
+<div class="row">
+	<div  class="form-group text-center">
+		<h3 ng-class="{'text-success' : MainCtrl.validVerb, 'text-danger' : !MainCtrl.validVerb}">
+			{{MainCtrl.fullWordSwahili}}
+		</h3>
+		<h4 class="text-default">
+			{{MainCtrl.fullWordEnglish}}
+		</h4>			
+		<h3 ng-class="{'text-success' : MainCtrl.validVerb, 'text-danger' : !MainCtrl.validVerb}">
+			{{MainCtrl.message}} <span ng-class="{'glyphicon-thumbs-up' : MainCtrl.validVerb, 'glyphicon-thumbs-down' : !MainCtrl.validVerb}" class="glyphicon"/>
+		</h3>
+		<h4 ng-hide="MainCtrl.validVerb" class="text-danger">
+			{{MainCtrl.invalidErrorMsg}}
+		</h4>
+	</div>
 </div>
+

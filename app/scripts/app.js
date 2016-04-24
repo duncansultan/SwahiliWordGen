@@ -18,8 +18,8 @@ angular
     'ngSanitize',
     'ngTouch',
 	'swahiliApp.data',
-	'swahiliApp.verbParts',
-	'kendo.directives'
+	'swahiliApp.word',
+	'swahiliApp.validation'
   ])
   .config(function ($routeProvider) {
     $routeProvider

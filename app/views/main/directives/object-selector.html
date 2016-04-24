@@ -1,14 +1,9 @@
 <div class="form-group">
-	<div class="row">
-		<h6>Object <span class="glyphicon glyphicon glyphicon-gift"/>
-		</h6>
-	</div>		
-	<div class="row">
-		<select ng-model="ObjectCtrl.selected" 
-		ng-options="object.Swahili + ' (' + object.English + ')' for object in ObjectCtrl.objects"
-		ng-change="ObjectCtrl.changed()"
-		kendo-drop-down-list 
-		k-ng-delay="ObjectCtrl.selected">
-		</select>
-	</div>
+	<h6 class="control-label">
+	Object <span class="glyphicon glyphicon glyphicon-gift"/>
+	</h6>
+	<select class="form-control" ng-model="ObjectCtrl.selected" 
+	ng-options="object.Swahili + ' (' + object.English + ')' for object in ObjectCtrl.objects"
+	ng-change="ObjectCtrl.changed()">
+	</select>
 </div>

@@ -8,27 +8,28 @@
  * Controller of the swahiliApp
  */
 angular.module('swahiliApp')
-// Controller to handle the 3rd "Object" spinner
-// ***Note that object refers to the spoken language part of speech rather than a programming construct
+// Controller to handle the last "Ending" spinner
 .directive('endingSelector', function () {
 	return {
 		restrict : 'E',
 		templateUrl : 'views/main/directives/ending-selector.html',
-		controller : function (endingData, word) {
+		controller : function (endingData, word, validate) {
 			var vm = this;
-			
-			// Share Selected Object with Service
+			// Share Selected Ending with Service
 			vm.changed = function () {
-				word.setEnding(vm.selected);
+				word.SetEnding(vm.selected);
 			};
 			
 			endingData.all()
 			.success(function (data) {
 				vm.endings = data;
-				vm.selected = vm.endings[0];
+				for (var i = 0; i < vm.endings.length; i++) {
+					if (vm.endings[i] === '-a') {
+						vm.selected = vm.endings[i];
+					}
+				}
 				vm.changed();
 			});
-
 		},
 		controllerAs : 'EndingCtrl'
 	};

@@ -13,12 +13,11 @@ angular.module('swahiliApp')
 	return {
 		restrict : 'E',
 		templateUrl : 'views/main/directives/verb-selector.html',
-		controller : function (verbData, word) {
+		controller : function (verbData, word, validate) {
 			var vm = this;
-
 			// Share Selected Verb with Service
 			vm.changed = function () {
-				word.setVerb(vm.selected);
+				word.SetVerb(vm.selected);
 			};
 
 			verbData.all()
@@ -31,7 +30,6 @@ angular.module('swahiliApp')
 				}
 				vm.changed();
 			});
-
 		},
 		controllerAs : 'VerbCtrl'
 	};

@@ -1,14 +1,9 @@
 <div class="form-group">
-	<div class="row">
-		<h6>Verb Ending <span class="glyphicon glyphicon-flag"/>
-		</h6>
-	</div>		
-	<div class="row">
-		<select ng-model="EndingCtrl.selected" 
-		ng-options="ending for ending in EndingCtrl.endings"
-		ng-change="EndingCtrl.changed()"
-		kendo-drop-down-list 
-		k-ng-delay="EndingCtrl.selected">
-		</select>
-	</div>
+	<h6 class="control-label">
+	Ending <span class="glyphicon glyphicon-flag"/>
+	</h6>
+	<select class="form-control" ng-model="EndingCtrl.selected" 
+	ng-options="ending for ending in EndingCtrl.endings"
+	ng-change="EndingCtrl.changed()">
+	</select>
 </div>

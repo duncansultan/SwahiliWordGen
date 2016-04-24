@@ -1,98 +1,233 @@
 [
     {
-        "Swahili": "",
-        "English": "Empty",
-		"NounClass": null,
-		"Form": null
-    }, 
-    {
-        "Swahili": "ku",
-        "English": "To Do",
+        "Swahili": "ku-",
+        "English": "to (do)",
 		"NounClass": "Infinitive",
+		"NounClassPrefix": "ku",
 		"Form": "Positive"
     },     
 	{
-        "Swahili": "ni",
+        "Swahili": "ni-",
         "English": "I",
-		"NounClass": "m/wa",
+		"NounClass": "mimi",
+		"NounClassPrefix": "mimi",
 		"Form": "Positive"
     }, 
-    {
-        "Swahili": "u",
-        "English": "You",
-		"NounClass": "m/wa",
-		"Form": "Positive"
-    }, 
-    {
-        "Swahili": "mu",
-        "English": "Y'all",
-		"NounClass": "m/wa",
-		"Form": "Positive"
-    }, 
-    {
-        "Swahili": "a",
-        "English": "He/She",
-		"NounClass": "m/wa",
-		"Form": "Positive"
-    }, 
-    {
-        "Swahili": "wa",
-        "English": "They",
-		"NounClass": "m/wa",
-		"Form": "Positive"
-    }, 
-    {
-        "Swahili": "i",
-        "English": "It",
-		"NounClass": "m/mi",
-		"Form": "Positive"
-    },
-    {
-        "Swahili": "si",
-        "English": "I - Negative",
-		"NounClass": "m/wa",
-		"Form": "Negative"
-    },
-    {
-        "Swahili": "hu",
-        "English": "You - Negative",
-		"NounClass": "m/wa",
-		"Form": "Negative"
-    },
-    {
-        "Swahili": "ha",
-        "English": "He/She - Negative",
-		"NounClass": "m/wa",
-		"Form": "Negative"
-    },	
-    {
-        "Swahili": "hatu",
-        "English": "We (don't)",
-		"NounClass": "m/wa",
-		"Form": "Negative"
-    },	
-    {
-        "Swahili": "ham",
-        "English": "Y'all - Negative",
-		"NounClass": "m/wa",
-		"Form": "Negative"
-    },		
-    {
-        "Swahili": "hawa",
-        "English": "They - Negative",
-		"NounClass": "Negative: [m/wa] They",
-		"Form": "Negative"
-    },	
-    {
-        "Swahili": "hau",
-        "English": "It - Negative",
-		"NounClass": "m/mi",
-		"Form": "Negative"
-    },	
 	{
-        "Swahili": "hai",
-        "English": "They - Negative",
-		"NounClass": "m/mi",
+        "Swahili": "si-",
+        "English": "I",
+		"NounClass": "mimi",
+		"NounClassPrefix": "mimi",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "u-",
+        "English": "you",
+		"NounClass": "wewe",
+		"NounClassPrefix": "wewe",
+		"Form": "Positive"
+    }, 
+    {
+        "Swahili": "hu-",
+        "English": "you",
+		"NounClass": "wewe",
+		"NounClassPrefix": "wewe",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "a-",
+        "English": "he/she",
+		"NounClass": "yeye",
+		"NounClassPrefix": "yeye",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "ha-",
+        "English": "he/she",
+		"NounClass": "yeye",
+		"NounClassPrefix": "yeye",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "tu-",
+        "English": "us",
+		"NounClass": "sisi",
+		"NounClassPrefix": "sisi",
+		"Form": "Positive"
+    },
+	{
+        "Swahili": "hatu-",
+        "English": "us",
+		"NounClass": "sisi",
+		"NounClassPrefix": "sisi",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "m-",
+        "English": "y'all",
+		"NounClass": "ninyi",
+		"NounClassPrefix": "ninyi",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "ham-",
+        "English": "y'all",
+		"NounClass": "ninyi",
+		"NounClassPrefix": "ninyi",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "wa-",
+        "English": "they",
+		"NounClass": "wao",
+		"NounClassPrefix": "wao",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hawa-",
+        "English": "they",
+		"NounClass": "wao",
+		"NounClassPrefix": "wao",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "u-",
+        "English": "the",
+		"NounClass": "3",
+		"NounClassPrefix": "m- / mw-",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hau-",
+        "English": "the",
+		"NounClass": "3",
+		"NounClassPrefix": "m- / mw-",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "i-",
+        "English": "the",
+		"NounClass": "4",
+		"NounClassPrefix": "mi-",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hai-",
+        "English": "the",
+		"NounClass": "4",
+		"NounClassPrefix": "mi-",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "li-",
+        "English": "the",
+		"NounClass": "5",
+		"NounClassPrefix": "-(no prefix)",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hali-",
+        "English": "the",
+		"NounClass": "5",
+		"NounClassPrefix": "-(no prefix)",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "ya-",
+        "English": "the",
+		"NounClass": "6",
+		"NounClassPrefix": "ma-",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "haya-",
+        "English": "the",
+		"NounClass": "6",
+		"NounClassPrefix": "ma-",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "ki-",
+        "English": "the",
+		"NounClass": "7",
+		"NounClassPrefix": "ki- / ch-",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "haki-",
+        "English": "the",
+		"NounClass": "7",
+		"NounClassPrefix": "ki- / ch-",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "vi-",
+        "English": "the",
+		"NounClass": "8",
+		"NounClassPrefix": "vi- / vy-",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "havi-",
+        "English": "the",
+		"NounClass": "8",
+		"NounClassPrefix": "vi- / vy-",
+		"Form": "Negative"
+    },
+    {
+        "Swahili": "i-",
+        "English": "the",
+		"NounClass": "9",
+		"NounClassPrefix": "-(no prefix)",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hai-",
+        "English": "the",
+		"NounClass": "9",
+		"NounClassPrefix": "-(no prefix)",
+		"Form": "Negative"
+    },
+	{
+        "Swahili": "zi-",
+        "English": "the",
+		"NounClass": "10",
+		"NounClassPrefix": "-(no prefix)",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hazi-",
+        "English": "the",
+		"NounClass": "10",
+		"NounClassPrefix": "-(no prefix)",
+		"Form": "Negative"
+    },
+	{
+        "Swahili": "u-",
+        "English": "the",
+		"NounClass": "11",
+		"NounClassPrefix": "u-",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hau-",
+        "English": "the",
+		"NounClass": "11",
+		"NounClassPrefix": "u-",
+		"Form": "Negative"
+    },
+	{
+        "Swahili": "u-",
+        "English": "the",
+		"NounClass": "14",
+		"NounClassPrefix": "u-",
+		"Form": "Positive"
+    },
+    {
+        "Swahili": "hau-",
+        "English": "the",
+		"NounClass": "14",
+		"NounClassPrefix": "u-",
 		"Form": "Negative"
     }
 ]
